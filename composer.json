@@ -1,0 +1,48 @@
+{
+    "name": "iocaste/lumen-firebase-auth",
+    "description": "Firebase auth + JWT for Lumen 5.6+",
+    "authors": [
+        {
+            "name": "John.Doe",
+            "email": "iocaste.systems@gmail.com"
+        }
+    ],
+    "keywords": [
+        "microservice",
+        "laravel",
+        "lumen",
+        "firebase",
+        "api",
+        "auth",
+        "jwt"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "roave/security-advisories": "dev-master",
+        "php": ">=7.1.3",
+        "illuminate/contracts": "5.6.*",
+        "illuminate/support": "5.6.*",
+        "illuminate/http": "5.6.*",
+        "tymon/jwt-auth": "dev-develop",
+        "firebase/php-jwt": "^5.0"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "~1.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Iocaste\\FirebaseAuth\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Iocaste\\FirebaseAuth\\Providers\\FirebaseAuthServiceProvider"
+            ]
+        }
+    }
+}
