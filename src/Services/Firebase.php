@@ -20,7 +20,7 @@ class Firebase
      * @throws InvalidIssuer
      * @throws InvalidUser
      */
-    protected function getFirebaseId(string $token): ?string
+    public function getId(string $token): ?string
     {
         $content = file_get_contents(
             'https://www.googleapis.com/robot/v1/metadata/x509/securetoken@system.gserviceaccount.com'
